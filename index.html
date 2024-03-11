@@ -1,0 +1,41 @@
+<!DOCTYPE html> <!--aqui estou definindo que este documento é um documento HTML na versão 5-->
+<html lang="pt-br"></html><!-- define a lingua oficial-->
+<html><!--elemento que diz que é uma página html-->
+    <head><!--contém as metainformações da página-->
+        <meta charset="utf-8"><!--colquei utf 8 para aceitar as pontuações da página-->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"><!--siginifica que a página deve rodar nas versões atuais e compativeis com os padrões-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--fala sobre a largura do dispositivo para póder criar a largura da página, sempre se baseando no dispositivo-->
+       <title>Portfolio</title><!--Título da página-->
+       <link rel="stylesheet" href="./style/style.css"><!-- estou fazendo referencia ao arquivo css que vou usar para estilizar a página-->
+    </head>
+    <body><!--corpo do site-->
+        <header class="cabecalho">
+            <nav class="cabecalho__menu"> <!--nav é a tag onde vou inserir os links dentro dela para navegar na página-->
+                <a class="cabecalho__menu__link" href="index.html">Home</a>   
+                <a class="cabecalho__menu__link" href="about.html">Sobre mim</a> 
+            </nav>
+        </header><!--Cabeçalho da página-->
+        <main class="apresentacao"><!--conteúdo principal da página-->
+            <section class="apresentacao__conteudo"><!--aqui estou separando a seção pois queremos a imagem de um lado e a parte escrita e as ancoras do outro lado-->
+                <h1 class="apresentacao__conteudo__titulo">Eleve seu negócio digital a outro nível <strong class="título-destaque"> com um Front-end de qualidade!</strong></h1><!--Baseado no projeto do Figma, esse é o título e o strong é para deixar destacado-->
+                <p class="apresentacao__conteudo__texto">Olá! Sou Priscilla Albuquerque, estudante de programação e futura desenvolvedora Front-end. Vamos conversar?</p>
+                <div class="apresentacao__links"><!--a div  é usada para criar uma divisão e é usada para agrupar e organizar alguns elementos html. Nesse caso, quero organizar os botões abaixo ancora-->
+                    <h2 class="apresentacao__links__subtitulo">Acesse minhas redes:</h2><!--o h21 é um subtitulo e não um título principal-->
+                    <a class="apresentacao__links__navegacao" href="https://www.linkedin.com/in/priscilla-mendes-albuquerque-904011176">
+                        <img src="./assets/linkedin.png">
+                        Linkedin
+                    </a><!--tag ancora para ser redirecionado para outro lugar-->
+                    
+                    <a class="apresentacao__links__navegacao"href="https://github.com/prialbu">
+                        <img src="./assets/github.png">
+                        GitHub
+                    </a>
+                </div>
+            </section>
+            <img class="apresentacao__imagem" src="./assets/imagem priscilla.jpg" alt="foto da priscilla" class="foto_da_priscilla">
+        </main>
+        <footer class="rodape">
+            <p>Desenvolvido por Priscilla Albuquerque.</p>
+        </footer><!--rodapé da página-->
+    </body>
+</html> 
